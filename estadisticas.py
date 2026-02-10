@@ -32,11 +32,11 @@ else:
     exit()
 
 # Hacemos la solicitud a la API
-respuesta = requests.get(url)
+response = requests.get(url)
 
 # Si la respuesta es correcta (código 200)
-if respuesta.status_code == 200:
-    datos = respuesta.json()
+if response.status_code == 200:
+    datos = response.json()
 
     print("Nombre:", datos["name"].capitalize())
 
