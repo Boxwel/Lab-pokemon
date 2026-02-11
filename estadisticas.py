@@ -36,23 +36,23 @@ response = requests.get(url)
 
 # Si la respuesta es correcta (código 200)
 if response.status_code == 200:
-    datos = response.json()
+    data = response.json()
 
-    print("Nombre:", datos["name"].capitalize())
+    print("Nombre:", data["name"].capitalize())
 
     # Mostrar tipos
-    for tipo in datos["types"]:
+    for tipo in data["types"]:
         print("Tipo:", tipo["type"]["name"])
 
     # Mostrar habilidades
     print("Habilidades:")
-    for habilidad in datos["abilities"]:
+    for habilidad in data["abilities"]:
         print("-", habilidad["ability"]["name"])
 
     # Mostrar estadísticas
     print("Estadísticas:")
-    for stat in datos["stats"]:
+    for stat in data["stats"]:
         print("-", stat["stat"]["name"], ":", stat["base_stat"])
 
 else:
-    print("Error al obtener los datos del Pokémon.")
+    print("Error al obtener los data del Pokémon.")
