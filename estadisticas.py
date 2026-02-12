@@ -28,7 +28,7 @@ elif seleccionar == "4":
 elif seleccionar == "5":
     url = vileplume
 else:
-    print("Solo puedes seleccionar de 1 a 5.")
+    print("Opción inválida. Opciones disponibles: 1-2-3-4-5")
     exit()
 
 # Hacemos la solicitud a la API
