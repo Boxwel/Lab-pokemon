@@ -6,6 +6,7 @@ charmander = "https://pokeapi.co/api/v2/pokemon/charmander"
 rapidash = "https://pokeapi.co/api/v2/pokemon/rapidash"
 graveler = "https://pokeapi.co/api/v2/pokemon/graveler"
 vileplume = "https://pokeapi.co/api/v2/pokemon/vileplume"
+wartortle = "https://pokeapi.co/api/v2/pokemon/wartortle"
 
 # Menú
 print("""
@@ -14,10 +15,11 @@ print("""
 [3] Rapidash
 [4] Graveler
 [5] Vileplume
+[6] Wartortle
 """)
 
 # --- Selección del primer Pokémon ---
-pokemon1 = input("Selecciona el primer Pokémon (número del 1 al 5): ")
+pokemon1 = input("Selecciona el primer Pokémon (número del 1 al 6): ")
 
 if pokemon1 == "1":
     url1 = pikachu
@@ -29,12 +31,14 @@ elif pokemon1 == "4":
     url1 = graveler
 elif pokemon1 == "5":
     url1 = vileplume
+elif pokemon1 == "6":
+    url1 = wartortle
 else:
-    print("Solo puedes seleccionar de 1 a 5.")
+    print("Solo puedes seleccionar de 1 a 6.")
     exit()
 
 # --- Selección del segundo Pokémon ---
-pokemon2 = input("Selecciona el segundo Pokémon (número del 1 al 5): ")
+pokemon2 = input("Selecciona el segundo Pokémon (número del 1 al 6): ")
 
 if pokemon2 == "1":
     url2 = pikachu
@@ -46,8 +50,10 @@ elif pokemon2 == "4":
     url2 = graveler
 elif pokemon2 == "5":
     url2 = vileplume
+elif pokemon2 == "6":
+    url2 = wartortle
 else:
-    print("Solo puedes seleccionar de 1 a 5.")
+    print("Solo puedes seleccionar de 1 a 6.")
     exit()
 
 # --- Obtener los datos de ambos ---

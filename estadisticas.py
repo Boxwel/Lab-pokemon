@@ -5,6 +5,7 @@ charmander = "https://pokeapi.co/api/v2/pokemon/charmander"
 rapidash = "https://pokeapi.co/api/v2/pokemon/rapidash"
 graveler = "https://pokeapi.co/api/v2/pokemon/graveler"
 vileplume = "https://pokeapi.co/api/v2/pokemon/vileplume"
+wartortle = "https://pokeapi.co/api/v2/pokemon/wartortle"
 
 print("""
 [1] Pikachu
@@ -12,9 +13,10 @@ print("""
 [3] Rapidash
 [4] Graveler
 [5] Vileplume
+[6] Wartortle
 """)
 
-seleccionar = input("Selecciona un Pokémon (número del 1 al 5): ")
+seleccionar = input("Selecciona un Pokémon (número del 1 al 6): ")
 
 # Según la elección, se guarda la URL correspondiente
 if seleccionar == "1":
@@ -27,8 +29,10 @@ elif seleccionar == "4":
     url = graveler
 elif seleccionar == "5":
     url = vileplume
+elif seleccionar == "6":
+    url = wartortle
 else:
-    print("Opción inválida. Opciones disponibles: 1-2-3-4-5")
+    print("Opción inválida. Opciones disponibles: 1-2-3-4-5-6")
     exit()
 
 # Hacemos la solicitud a la API
