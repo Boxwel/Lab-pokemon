@@ -43,10 +43,12 @@ if response.status_code == 200:
     data = response.json()
 
     print("Nombre:", data["name"].capitalize())
+    print(" ")
 
     # Mostrar tipos
     for tipo in data["types"]:
         print("Tipo:", tipo["type"]["name"])
+        print(" ")
 
     # Mostrar habilidades
     print("Habilidades:")
