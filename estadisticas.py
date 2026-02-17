@@ -16,7 +16,7 @@ print("""
 [6] Wartortle
 """)
 
-seleccionar = input("Selecciona un Pokémon (número del 1 al 6): ")
+seleccionar = input("Selecciona un Pokemon (número del 1 al 6): ")
 
 # Según la elección, se guarda la URL correspondiente
 if seleccionar == "1":
