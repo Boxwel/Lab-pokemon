@@ -32,7 +32,7 @@ elif seleccionar == "5":
 elif seleccionar == "6":
     url = wartortle
 else:
-    print("Opción inválida. Opciones disponibles: 1-2-3-4-5-6")
+    print("Opción inexistente. Opciones disponibles: 1-2-3-4-5-6")
     exit()
 
 # Hacemos la solicitud a la API
