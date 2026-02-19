@@ -53,7 +53,7 @@ elif pokemon2 == "5":
 elif pokemon2 == "6":
     url2 = wartortle
 else:
-    print("Solo puedes seleccionar de 1 a 6.")
+    print("Solo puedes seleccionar del 1 a 6.")
     exit()
 
 # --- Obtener los datos de ambos ---
