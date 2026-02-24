@@ -34,7 +34,7 @@ elif pokemon1 == "5":
 elif pokemon1 == "6":
     url1 = wartortle
 else:
-    print("Solo puedes seleccionar de 1 a 6.")
+    print("ERROR: Digita el número del Pokémon (1-6).")
     exit()
 
 # --- Selección del segundo Pokémon ---
